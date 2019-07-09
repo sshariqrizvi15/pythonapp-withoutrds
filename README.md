@@ -14,3 +14,13 @@ git clone https://github.com/sshariqrizvi15/pythonapp-withoutrds.git
 sudo pip3 install -r pythonapp-withoutrds/requirements.txt
 nohup python3 /home/ec2-user/pythonapp-withoutrds/app/app.py > output.txt 2>&1  </dev/null &
 sudo service httpd start
+
+_______________________
+## Doceker Part
+docker build -t docker-flask:latest .
+
+docker run -d --name flaskapp -v$PWD/app:/app -p5000:5000 docker-flask:latest
+
+docker stop flaskapp
+
+docker rm flaskapp
