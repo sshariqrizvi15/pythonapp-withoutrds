@@ -1,7 +1,7 @@
 [
     {
       "name": "shariq-flask",
-      "image": "853219876644.dkr.ecr.us-east-2.amazonaws.com/shariqflaskapp",
+      "image": "853219876644.dkr.ecr.us-east-2.amazonaws.com/shariqflaskapp:latest",
       "essential": true,
       "portMappings": [
         {
